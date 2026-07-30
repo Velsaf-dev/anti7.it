@@ -1,6 +1,26 @@
 (function () {
   'use strict';
 
+  // Instant Background JS Preloader for Zero-Lag Image Rendering on Netlify / CDN
+  const imagesToPreload = [
+    'assets/avatars/valeriy.jpg',
+    'assets/avatars/yaroslav.png',
+    'assets/projects/nuclear_it_hack.jpg',
+    'assets/projects/lsad-hse.jpg',
+    'assets/projects/rosatom.jpg',
+    'assets/projects/vsu-abitur.jpg',
+    'assets/projects/vsu-liter.jpg',
+    'assets/projects/mpit.png',
+    'assets/projects/vrn-ctf.jpg',
+    'assets/projects/ctf-vsu.png',
+    'assets/projects/wata.jpg'
+  ];
+
+  imagesToPreload.forEach(src => {
+    const img = new Image();
+    img.src = src;
+  });
+
   const container = document.getElementById('slides-container');
   const slides = document.querySelectorAll('.slide-section');
   const navLinks = document.querySelectorAll('.header-nav .nav-link');
