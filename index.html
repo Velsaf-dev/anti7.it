@@ -6,6 +6,19 @@
   <title>Anti7-IT — Разработка и запуск IT-решений</title>
   <meta name="description" content="Anti7-IT — команда по разработке, запуску и поддержке современных IT-решений. Web/Native, AI/ML-интеграции, продуктовая аналитика." />
 
+  <!-- Instant Preload of All Project & Avatar Images for Zero-Delay Rendering on Netlify -->
+  <link rel="preload" as="image" href="assets/avatars/valeriy.jpg" />
+  <link rel="preload" as="image" href="assets/avatars/yaroslav.png" />
+  <link rel="preload" as="image" href="assets/projects/nuclear_it_hack.jpg" />
+  <link rel="preload" as="image" href="assets/projects/lsad-hse.jpg" />
+  <link rel="preload" as="image" href="assets/projects/rosatom.jpg" />
+  <link rel="preload" as="image" href="assets/projects/vsu-abitur.jpg" />
+  <link rel="preload" as="image" href="assets/projects/vsu-liter.jpg" />
+  <link rel="preload" as="image" href="assets/projects/mpit.png" />
+  <link rel="preload" as="image" href="assets/projects/vrn-ctf.jpg" />
+  <link rel="preload" as="image" href="assets/projects/ctf-vsu.png" />
+  <link rel="preload" as="image" href="assets/projects/wata.jpg" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -219,7 +232,7 @@
           <div class="team-storytelling-paragraphs">
             <div class="team-storytelling-item">
               <div class="team-portrait-badge">
-                <img src="assets/avatars/valeriy.jpg" alt="Валерий Сафонов" loading="lazy" />
+                <img src="assets/avatars/valeriy.jpg" alt="Валерий Сафонов" loading="eager" fetchpriority="high" />
               </div>
               <div class="team-storytelling-body">
                 <h3 class="team-storytelling-name">Валерий Сафонов <span class="team-storytelling-role">— Co-Founder · ML Engineer / Product-manager</span></h3>
@@ -231,7 +244,7 @@
 
             <div class="team-storytelling-item">
               <div class="team-portrait-badge">
-                <img src="assets/avatars/yaroslav.png" alt="Ярослав Гаджиев" loading="lazy" />
+                <img src="assets/avatars/yaroslav.png" alt="Ярослав Гаджиев" loading="eager" fetchpriority="high" />
               </div>
               <div class="team-storytelling-body">
                 <h3 class="team-storytelling-name">Ярослав Гаджиев <span class="team-storytelling-role">— Co-Founder · Fullstack-dev / SRE Engineer</span></h3>
@@ -265,7 +278,7 @@
           <div class="projects-editorial-list">
             <article class="project-editorial-row">
               <div class="project-editorial-photo">
-                <img src="assets/projects/nuclear_it_hack.jpg" alt="Nuclear IT hack" loading="lazy" />
+                <img src="assets/projects/nuclear_it_hack.jpg" alt="Nuclear IT hack" loading="eager" fetchpriority="high" />
               </div>
               <div class="project-editorial-content">
                 <div class="project-editorial-meta">
@@ -282,7 +295,7 @@
 
             <article class="project-editorial-row">
               <div class="project-editorial-photo">
-                <img src="assets/projects/lsad-hse.jpg" alt="Летняя школа ВШЭ" loading="lazy" />
+                <img src="assets/projects/lsad-hse.jpg" alt="Летняя школа ВШЭ" loading="eager" fetchpriority="high" />
               </div>
               <div class="project-editorial-content">
                 <div class="project-editorial-meta">
@@ -299,7 +312,7 @@
 
             <article class="project-editorial-row">
               <div class="project-editorial-photo">
-                <img src="assets/projects/rosatom.jpg" alt="Росатом" loading="lazy" />
+                <img src="assets/projects/rosatom.jpg" alt="Росатом" loading="eager" fetchpriority="high" />
               </div>
               <div class="project-editorial-content">
                 <div class="project-editorial-meta">
@@ -336,7 +349,7 @@
           <div class="projects-editorial-list">
             <article class="project-editorial-row project-editorial-row--mirrored">
               <div class="project-editorial-photo">
-                <img src="assets/projects/vsu-abitur.jpg" alt="Абитуриент ВГУ" loading="lazy" />
+                <img src="assets/projects/vsu-abitur.jpg" alt="Абитуриент ВГУ" loading="eager" fetchpriority="high" />
               </div>
               <div class="project-editorial-content">
                 <div class="project-editorial-meta">
@@ -353,7 +366,7 @@
 
             <article class="project-editorial-row project-editorial-row--mirrored">
               <div class="project-editorial-photo">
-                <img src="assets/projects/vsu-liter.jpg" alt="Литература ВГУ" loading="lazy" />
+                <img src="assets/projects/vsu-liter.jpg" alt="Литература ВГУ" loading="eager" fetchpriority="high" />
               </div>
               <div class="project-editorial-content">
                 <div class="project-editorial-meta">
@@ -370,7 +383,7 @@
 
             <article class="project-editorial-row project-editorial-row--mirrored">
               <div class="project-editorial-photo">
-                <img src="assets/projects/mpit.png" alt="Команда МПИТ" loading="lazy" />
+                <img src="assets/projects/mpit.png" alt="Команда МПИТ" loading="eager" fetchpriority="high" />
               </div>
               <div class="project-editorial-content">
                 <div class="project-editorial-meta">
@@ -407,7 +420,7 @@
           <div class="projects-editorial-list">
             <article class="project-editorial-row">
               <div class="project-editorial-photo">
-                <img src="assets/projects/vrn-ctf.jpg" alt="VRN-CTF" loading="lazy" />
+                <img src="assets/projects/vrn-ctf.jpg" alt="VRN-CTF" loading="eager" fetchpriority="high" />
               </div>
               <div class="project-editorial-content">
                 <div class="project-editorial-meta">
@@ -424,7 +437,7 @@
 
             <article class="project-editorial-row">
               <div class="project-editorial-photo">
-                <img src="assets/projects/ctf-vsu.png" alt="CTF-соревнования" loading="lazy" />
+                <img src="assets/projects/ctf-vsu.png" alt="CTF-соревнования" loading="eager" fetchpriority="high" />
               </div>
               <div class="project-editorial-content">
                 <div class="project-editorial-meta">
@@ -441,7 +454,7 @@
 
             <article class="project-editorial-row">
               <div class="project-editorial-photo">
-                <img src="assets/projects/wata.jpg" alt="Wata" loading="lazy" />
+                <img src="assets/projects/wata.jpg" alt="Wata" loading="eager" fetchpriority="high" />
               </div>
               <div class="project-editorial-content">
                 <div class="project-editorial-meta">
