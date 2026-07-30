@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Anti7-IT — Разработка и запуск IT-решений</title>
+  <meta name="description" content="Anti7-IT — команда по разработке, запуску и поддержке современных IT-решений. Web/Native, AI/ML-интеграции, продуктовая аналитика." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <canvas id="particle-canvas" class="global-particle-canvas" aria-hidden="true"></canvas>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#slide-1" class="header-logo">Anti7-IT</a>
+      <nav class="header-nav">
+        <a href="#slide-2" class="nav-link">Направления</a>
+        <a href="#slide-3" class="nav-link">О нас</a>
+        <a href="#slide-4" class="nav-link">Команда</a>
+        <a href="#slide-5" class="nav-link" data-nav-target="projects">Проекты</a>
+        <a href="#slide-8" class="nav-link nav-link--accent">Связаться</a>
+      </nav>
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Меню">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#slide-1">Главная</a>
+    <a href="#slide-2">Направления сотрудничества</a>
+    <a href="#slide-3">О нашей команде</a>
+    <a href="#slide-4">Команда</a>
+    <a href="#slide-5">Проекты — Часть 1</a>
+    <a href="#slide-6">Проекты — Часть 2</a>
+    <a href="#slide-7">Проекты — Часть 3</a>
+    <a href="#slide-8">Связаться</a>
+  </div>
+
+  <div class="slides-container" id="slides-container">
+
+    <section class="slide-section" id="slide-1">
+      <div class="hero-frame-graphic" aria-hidden="true">
+        <svg viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="300" cy="300" r="280" stroke="rgba(193, 242, 41, 0.18)" stroke-width="1.5" stroke-dasharray="6 8" />
+          <circle cx="300" cy="300" r="210" stroke="url(#hero-circle-grad)" stroke-width="1.5" />
+          <circle cx="300" cy="300" r="140" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+          <path d="M 90 300 C 90 180, 180 90, 300 90 C 420 90, 510 180, 510 300" stroke="rgba(193, 242, 41, 0.4)" stroke-width="2" stroke-linecap="round" />
+          <defs>
+            <linearGradient id="hero-circle-grad" x1="90" y1="90" x2="510" y2="510" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#C1F229" stop-opacity="0.6" />
+              <stop offset="0.5" stop-color="#C1F229" stop-opacity="0.15" />
+              <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.05" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <div class="hero-frame-glow"></div>
+      </div>
+
+      <div class="container slide-content">
+        <div class="hero-kicker">Инженерно-технологическая команда</div>
+        <h1 class="hero-title">
+          Разработка, запуск<br />
+          и поддержка современных<br />
+          <span class="hero-title--accent">IT&#8209;решений</span>
+        </h1>
+        <p class="hero-sub">
+          Внедряем передовые технологии — от AI/ML до высоконагруженной инфраструктуры — и выводим продукты на рынок.
+        </p>
+
+        <div class="hero-meta">
+          <div class="hero-meta-item">
+            <span class="meta-value">9+</span>
+            <span class="meta-label">Призовых мест на<br />всероссийских хакатонах</span>
+          </div>
+          <div class="hero-meta-divider"></div>
+          <div class="hero-meta-item">
+            <span class="meta-value">3</span>
+            <span class="meta-label">Ключевых вектора<br />разработки</span>
+          </div>
+          <div class="hero-meta-divider"></div>
+          <div class="hero-meta-item">
+            <span class="meta-value">Full&#8209;cycle</span>
+            <span class="meta-label">От идеи до запуска<br />и поддержки</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide-section" id="slide-2">
+      <div class="abstract-geometric-art" aria-hidden="true">
+        <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="250" cy="250" r="230" stroke="rgba(193, 242, 41, 0.12)" stroke-width="1" stroke-dasharray="4 8" />
+          <circle cx="250" cy="250" r="180" stroke="rgba(193, 242, 41, 0.22)" stroke-width="1.5" />
+          <circle cx="250" cy="250" r="130" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+          <path d="M 50 250 A 200 200 0 0 1 450 250" stroke="url(#abstract-arc-grad-1)" stroke-width="2" stroke-linecap="round" />
+          <path d="M 250 50 A 200 200 0 0 1 250 450" stroke="rgba(193, 242, 41, 0.25)" stroke-width="1.5" stroke-dasharray="8 6" />
+          <polygon points="250,70 430,250 250,430 70,250" stroke="rgba(193, 242, 41, 0.35)" stroke-width="1.5" fill="rgba(193, 242, 41, 0.02)" />
+          <polygon points="250,130 370,250 250,370 130,250" stroke="rgba(255, 255, 255, 0.06)" stroke-width="1" />
+          <circle cx="250" cy="70" r="4" fill="#C1F229" />
+          <circle cx="430" cy="250" r="4" fill="#C1F229" />
+          <circle cx="250" cy="430" r="4" fill="#C1F229" />
+          <circle cx="70" cy="250" r="4" fill="#C1F229" />
+          <defs>
+            <linearGradient id="abstract-arc-grad-1" x1="50" y1="50" x2="450" y2="450" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#C1F229" stop-opacity="0.8" />
+              <stop offset="0.6" stop-color="#C1F229" stop-opacity="0.2" />
+              <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.05" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <div class="container slide-content">
+        <div class="directions-editorial-layout">
+          <div class="directions-header-block">
+            <span class="directions-kicker">Ключевая экспертиза</span>
+            <h2 class="directions-main-title">Направления сотрудничества</h2>
+            <p class="directions-intro">
+              Мы объединяем разработку, аналитику и AI-технологии в единый бесшовный процесс создания бизнес-продуктов.
+            </p>
+          </div>
+
+          <div class="directions-paragraphs-list">
+            <div class="directions-item">
+              <div class="directions-item-num">01</div>
+              <div class="directions-item-content">
+                <h3 class="directions-item-heading">Разработка Web/Native-решений под ключ</h3>
+                <p class="directions-item-text">
+                  Проектируем и создаём высоконагруженные веб-сервисы, нативные мобильные приложения и микросервисную архитектуру. Берем на себя полный цикл — от выбора стека и проектирования баз данных до автоматического CI/CD деплоя и бессрочного SRE-сопровождения.
+                </p>
+              </div>
+            </div>
+
+            <div class="directions-item">
+              <div class="directions-item-num">02</div>
+              <div class="directions-item-content">
+                <h3 class="directions-item-heading">Продуктовая и бизнес-аналитика</h3>
+                <p class="directions-item-text">
+                  Исследуем пользовательские сценарии, формируем сквозную аналитику и проектируем выверенные продуктовые решения. Сопровождаем проект на каждом этапе развития, выстраивая прозрачные KPI и контрольные метрики эффективности для бизнеса.
+                </p>
+              </div>
+            </div>
+
+            <div class="directions-item">
+              <div class="directions-item-num">03</div>
+              <div class="directions-item-content">
+                <h3 class="directions-item-heading">Внедрение современных AI/ML-технологий</h3>
+                <p class="directions-item-text">
+                  Интегрируем нейросети, системы компьютерного зрения (Computer Vision) и мультимодальные LLM-агенты напрямую в операционные процессы. Автоматизируем рутинную аналитику, обработку данных и генерацию контента для кратного роста продуктивности.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide-section slide-section--bg-glow-center" id="slide-3">
+      <div class="slide-bg-ambient slide-bg-ambient--center" aria-hidden="true"></div>
+      <div class="container slide-content">
+        <div class="about-hero-block">
+          <span class="about-kicker">О нашей команде</span>
+          <h2 class="about-hero-title">
+            Мы — команда по запуску и поддержке IT-решений, специализирующаяся на разработке и сопровождении высококачественных продуктов для бизнеса
+          </h2>
+          
+          <div class="about-quote-box">
+            <p class="about-body">
+              Мы работаем с акцентом на индивидуальные цели каждого клиента: разрабатываем архитектуру под ваши задачи, внедряем современные технологии и эффективно выводим готовый продукт на рынок.
+            </p>
+          </div>
+
+          <div class="about-features-row">
+            <div class="about-feature-item">
+              <span class="feature-num">01</span>
+              <h4 class="feature-title">Индивидуальные цели</h4>
+              <p class="feature-desc">Каждый проект проектируется под точные требования и KPI вашего бизнеса.</p>
+            </div>
+            <div class="about-feature-item">
+              <span class="feature-num">02</span>
+              <h4 class="feature-title">Передовой стек</h4>
+              <p class="feature-desc">Внедряем современные веб-технологии, AI/ML интеграции и облачную инфраструктуру.</p>
+            </div>
+            <div class="about-feature-item">
+              <span class="feature-num">03</span>
+              <h4 class="feature-title">Вывод в Prod &amp; Поддержка</h4>
+              <p class="feature-desc">Не просто создаём продукт, а выводим его на рынок и обеспечиваем SRE-сопровождение.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide-section" id="slide-4">
+      <div class="abstract-geometric-art" aria-hidden="true">
+        <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="250" cy="250" r="230" stroke="rgba(193, 242, 41, 0.15)" stroke-width="1.5" stroke-dasharray="6 6" />
+          <circle cx="250" cy="250" r="160" stroke="rgba(193, 242, 41, 0.25)" stroke-width="1" />
+          <polygon points="250,50 450,250 250,450 50,250" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+          <circle cx="250" cy="50" r="4" fill="#C1F229" />
+          <circle cx="450" cy="250" r="4" fill="#C1F229" />
+        </svg>
+      </div>
+
+      <div class="container slide-content">
+        <div class="team-storytelling-layout">
+          <div class="directions-header-block">
+            <span class="directions-kicker">Основатели и ключевые инженеры</span>
+            <h2 class="directions-main-title">Команда</h2>
+          </div>
+
+          <div class="team-storytelling-paragraphs">
+            <div class="team-storytelling-item">
+              <div class="team-portrait-badge">
+                <img src="assets/avatars/valeriy.jpg" alt="Валерий Сафонов" loading="lazy" />
+              </div>
+              <div class="team-storytelling-body">
+                <h3 class="team-storytelling-name">Валерий Сафонов <span class="team-storytelling-role">— Co-Founder · ML Engineer / Product-manager</span></h3>
+                <p class="team-storytelling-desc">
+                  Запустил 3+ успешных бизнес-решения с акцентом на внедрении передового стека технологий. Специализируется в области Machine Learning и Data Science. Назван лучшим менеджером окружного этапа МПИТ-25/26 в Хабаровске. Победитель и призер всероссийских хакатонов, олимпиад и конкурсов. Выпускник Летней школы по анализу данных 2026 от ФКН Высшей школы экономики (ВШЭ).
+                </p>
+              </div>
+            </div>
+
+            <div class="team-storytelling-item">
+              <div class="team-portrait-badge">
+                <img src="assets/avatars/yaroslav.png" alt="Ярослав Гаджиев" loading="lazy" />
+              </div>
+              <div class="team-storytelling-body">
+                <h3 class="team-storytelling-name">Ярослав Гаджиев <span class="team-storytelling-role">— Co-Founder · Fullstack-dev / SRE Engineer</span></h3>
+                <p class="team-storytelling-desc">
+                  2+ коммерческих решения запущено напрямую в Production. Эксперт в области информационной безопасности сервисов, микросервисной архитектуре и облачных технологиях. Победитель и призер всероссийских олимпиад и командных хакатонов.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide-section" id="slide-5" data-slide-group="projects">
+      <div class="abstract-geometric-art" aria-hidden="true">
+        <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="250" cy="250" r="210" stroke="rgba(193, 242, 41, 0.15)" stroke-width="1.5" stroke-dasharray="6 6" />
+          <circle cx="250" cy="250" r="150" stroke="rgba(193, 242, 41, 0.25)" stroke-width="1" />
+          <path d="M 100 250 C 150 100, 350 100, 400 250 C 350 400, 150 400, 100 250 Z" stroke="rgba(193, 242, 41, 0.3)" stroke-width="1.5" />
+          <circle cx="250" cy="100" r="4" fill="#C1F229" />
+          <circle cx="400" cy="250" r="4" fill="#C1F229" />
+        </svg>
+      </div>
+
+      <div class="container slide-content">
+        <div class="projects-editorial-layout projects-editorial-layout--left">
+          <div class="section-header">
+            <h2 class="section-title">Партнёрские проекты</h2>
+          </div>
+
+          <div class="projects-editorial-list">
+            <article class="project-editorial-row">
+              <div class="project-editorial-photo">
+                <img src="assets/projects/nuclear_it_hack.jpg" alt="Nuclear IT hack" loading="lazy" />
+              </div>
+              <div class="project-editorial-content">
+                <div class="project-editorial-meta">
+                  <span class="project-partner-tag">КРОК</span>
+                  <span class="project-award-badge">3 место</span>
+                </div>
+                <span class="project-context-label">В рамках Nuclear IT hack 2026 реализовано:</span>
+                <h3 class="project-editorial-title">Интеллектуальная система оценки эффективности внедрения AI-решений в корпоративном секторе</h3>
+                <p class="project-editorial-desc">
+                  Разработана dashboard-система для бизнес-аналитики AI-интеграций в реальном времени с автоматическим расчётом эффективности внедрения моделей.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-editorial-row">
+              <div class="project-editorial-photo">
+                <img src="assets/projects/lsad-hse.jpg" alt="Летняя школа ВШЭ" loading="lazy" />
+              </div>
+              <div class="project-editorial-content">
+                <div class="project-editorial-meta">
+                  <span class="project-partner-tag">МТС</span>
+                  <span class="project-award-badge">2 место</span>
+                </div>
+                <span class="project-context-label">В рамках Летней школы ВШЭ по анализу данных 2026 реализовано:</span>
+                <h3 class="project-editorial-title">Интеллектуальная система компьютерного зрения в ритейл-сценах</h3>
+                <p class="project-editorial-desc">
+                  CV-система детекции и подсчета товаров, оптимизированная для работы в реальном времени и распознавания номенклатурных позиций.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-editorial-row">
+              <div class="project-editorial-photo">
+                <img src="assets/projects/rosatom.jpg" alt="Росатом" loading="lazy" />
+              </div>
+              <div class="project-editorial-content">
+                <div class="project-editorial-meta">
+                  <span class="project-partner-tag">Росатом · НВАЭС</span>
+                  <span class="project-award-badge">3 место</span>
+                </div>
+                <span class="project-context-label">В рамках смены «Мирный атом» реализовано:</span>
+                <h3 class="project-editorial-title">Информационный портал о развитии атомной отрасли и строительных проектах Росатома</h3>
+                <p class="project-editorial-desc">
+                  Сайт с научно-популярным контентом по ядерным технологиям и современным достижениям Росатома.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide-section" id="slide-6" data-slide-group="projects">
+      <div class="abstract-geometric-art" aria-hidden="true">
+        <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="250" cy="250" r="220" stroke="rgba(193, 242, 41, 0.18)" stroke-width="1.5" />
+          <polygon points="250,50 450,250 250,450 50,250" stroke="rgba(193, 242, 41, 0.25)" stroke-width="1.5" fill="rgba(193, 242, 41, 0.02)" />
+          <circle cx="250" cy="250" r="100" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" stroke-dasharray="4 6" />
+        </svg>
+      </div>
+
+      <div class="container slide-content">
+        <div class="projects-editorial-layout projects-editorial-layout--right">
+          <div class="section-header">
+            <h2 class="section-title">Партнёрские проекты</h2>
+          </div>
+
+          <div class="projects-editorial-list">
+            <article class="project-editorial-row project-editorial-row--mirrored">
+              <div class="project-editorial-photo">
+                <img src="assets/projects/vsu-abitur.jpg" alt="Абитуриент ВГУ" loading="lazy" />
+              </div>
+              <div class="project-editorial-content">
+                <div class="project-editorial-meta">
+                  <span class="project-partner-tag">ФКН ВГУ</span>
+                  <span class="project-award-badge">2 место</span>
+                </div>
+                <span class="project-context-label">В рамках регионального этапа МПИТ-25/26 реализовано:</span>
+                <h3 class="project-editorial-title">Онлайн-сервис для абитуриентов ВГУ</h3>
+                <p class="project-editorial-desc">
+                  Цифровой портал для ознакомления с вузом и персональным подбором образовательных траекторий обучения.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-editorial-row project-editorial-row--mirrored">
+              <div class="project-editorial-photo">
+                <img src="assets/projects/vsu-liter.jpg" alt="Литература ВГУ" loading="lazy" />
+              </div>
+              <div class="project-editorial-content">
+                <div class="project-editorial-meta">
+                  <span class="project-partner-tag">ФКН ВГУ</span>
+                  <span class="project-award-badge">3 место</span>
+                </div>
+                <span class="project-context-label">В рамках регионального этапа МПИТ-24/25 реализовано:</span>
+                <h3 class="project-editorial-title">Telegram-сервис по ознакомлению с историей литературы Воронежа</h3>
+                <p class="project-editorial-desc">
+                  Telegram-сервис с подключенной бонусной системой, картой и статьями по памятникам и важным местам литературы Воронежа.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-editorial-row project-editorial-row--mirrored">
+              <div class="project-editorial-photo">
+                <img src="assets/projects/mpit.png" alt="Команда МПИТ" loading="lazy" />
+              </div>
+              <div class="project-editorial-content">
+                <div class="project-editorial-meta">
+                  <span class="project-partner-tag">Команда МПИТ</span>
+                  <span class="project-award-badge">3 место</span>
+                </div>
+                <span class="project-context-label">В рамках окружного этапа МПИТ-25/26 реализовано:</span>
+                <h3 class="project-editorial-title">Генеративная платформа персонализированного контента по праздничной тематике</h3>
+                <p class="project-editorial-desc">
+                  AI-сервис на основе LLM и GAN архитектур для генерации персонализированного контента, фото и видео открыток.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide-section" id="slide-7" data-slide-group="projects">
+      <div class="abstract-geometric-art" aria-hidden="true">
+        <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="250" cy="250" r="230" stroke="rgba(193, 242, 41, 0.15)" stroke-width="1" stroke-dasharray="8 6" />
+          <path d="M 50 250 C 150 150, 350 350, 450 250" stroke="rgba(193, 242, 41, 0.3)" stroke-width="2" stroke-linecap="round" />
+          <circle cx="250" cy="250" r="140" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+        </svg>
+      </div>
+
+      <div class="container slide-content">
+        <div class="projects-editorial-layout projects-editorial-layout--left">
+          <div class="section-header">
+            <h2 class="section-title">Партнёрские проекты</h2>
+          </div>
+
+          <div class="projects-editorial-list">
+            <article class="project-editorial-row">
+              <div class="project-editorial-photo">
+                <img src="assets/projects/vrn-ctf.jpg" alt="VRN-CTF" loading="lazy" />
+              </div>
+              <div class="project-editorial-content">
+                <div class="project-editorial-meta">
+                  <span class="project-partner-tag">ФКН ВГУ &amp; Правительство ВО</span>
+                  <span class="project-award-badge">4 место</span>
+                </div>
+                <span class="project-context-label">В рамках VRN-CTF 2026 реализовано:</span>
+                <h3 class="project-editorial-title">Всероссийский чемпионат по информационной безопасности</h3>
+                <p class="project-editorial-desc">
+                  Достижения в области анализа Web-уязвимостей и Reverse-инжиниринга.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-editorial-row">
+              <div class="project-editorial-photo">
+                <img src="assets/projects/ctf-vsu.png" alt="CTF-соревнования" loading="lazy" />
+              </div>
+              <div class="project-editorial-content">
+                <div class="project-editorial-meta">
+                  <span class="project-partner-tag">ФКН ВГУ</span>
+                  <span class="project-award-badge">1-е и призовые места</span>
+                </div>
+                <span class="project-context-label">В рамках отборочных этапам на финал VRN-CTF реализовано:</span>
+                <h3 class="project-editorial-title">Региональные этапы соревнований по информационной безопасности</h3>
+                <p class="project-editorial-desc">
+                  2 призовых и 1 первое место на сезонных и тематических CTF-состязаниях.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-editorial-row">
+              <div class="project-editorial-photo">
+                <img src="assets/projects/wata.jpg" alt="Wata" loading="lazy" />
+              </div>
+              <div class="project-editorial-content">
+                <div class="project-editorial-meta">
+                  <span class="project-partner-tag">WATA</span>
+                  <span class="project-award-badge">4 место</span>
+                </div>
+                <span class="project-context-label">В рамках финального этапа МПИТ-25/26 реализовано:</span>
+                <h3 class="project-editorial-title">AI-дашборд для организации личных дел и проектов</h3>
+                <p class="project-editorial-desc">
+                  Система с планированием дел и персональным AI-помощником.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide-section slide-section--cta" id="slide-8">
+      <div class="cta-lines" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="container slide-content cta-slide-content">
+        <div class="cta-inner">
+          <div class="cta-dot" aria-hidden="true"></div>
+          <h2 class="cta-title">Есть идея?<br /><span class="cta-title--accent">Начните уже сегодня</span></h2>
+          <p class="cta-desc">Мы открыты к партнерской и проектной разработке. Напишите в Telegram — обсудим идею и предложим решение.</p>
+          <a href="https://t.me/valera_durov" class="cta-button" target="_blank" rel="noopener">Написать в Telegram (@valera_durov)</a>
+        </div>
+
+        <footer class="slide-footer">
+          <span class="footer-copy">&copy; 2026 Anti7-IT — Все права защищены</span>
+          <a href="#slide-1" class="footer-up">Наверх &uarr;</a>
+        </footer>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
